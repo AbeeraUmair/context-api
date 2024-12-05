@@ -30,8 +30,8 @@ export default function WishlistPage() {
             <CardContent>
               <div className="flex items-center">
                 <Image
-                width={200}
-                height={200}
+                  width={200}
+                  height={200}
                   src={product.image}
                   alt={product.name}
                   className="w-24 h-24 object-cover mr-4"
