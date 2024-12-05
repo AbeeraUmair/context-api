@@ -8,13 +8,13 @@ const Header = () => {
       <Link href="/" className="text-2xl">E-Shop</Link>
       <div className="space-x-4">
       <Link href="/products">
-          <Button variant="contained">Products</Button>
+          <Button  className='bg-blue-200' variant="contained">Products</Button>
         </Link>
         <Link href="/cart">
-          <Button variant="contained">Cart</Button>
+          <Button className='bg-blue-200' variant="contained">Cart</Button>
         </Link>
         <Link href="/wishlist">
-          <Button variant="contained">Wishlist</Button>
+          <Button className='bg-blue-200' variant="contained">Wishlist</Button>
         </Link>
       </div>
     </header>

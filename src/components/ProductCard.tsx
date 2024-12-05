@@ -15,9 +15,9 @@ const ProductCard = ({ product, onAddToCart, onAddToWishlist }: ProductCardProps
             <Image
                 src={product.image}
                 alt={product.name}
-                width={500}
-                height={400}
-                className="w-full h-58 object-cover" />
+                width={100}
+                height={100}
+                className="w-full h-48 object-cover" />
             <CardContent>
                 <Typography variant="h6">{product.name}</Typography>
                 <Typography>${product.price}</Typography>
