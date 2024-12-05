@@ -4,7 +4,7 @@ import { Button } from '@mui/material';
 
 const Header = () => {
   return (
-    <header className="flex justify-between p-4 bg-blue-500 text-white">
+    <header className="flex justify-between p-4 bg-black text-white">
       <Link href="/" className="text-2xl">E-Shop</Link>
       <div className="space-x-4">
       <Link href="/products">

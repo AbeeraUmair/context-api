@@ -11,24 +11,27 @@ type ProductCardProps = {
 
 const ProductCard = ({ product, onAddToCart, onAddToWishlist }: ProductCardProps) => {
     return (
-        <Card className="p-4" style={{ maxWidth: 300 }}>
+        <Card className="mt-2 p-4" style={{ maxWidth: 400 }}>
             <Image
                 src={product.image}
                 alt={product.name}
                 width={500}
                 height={400}
-                className="w-full h-48 object-contain" />
+                className="w-full h-58 object-cover" />
             <CardContent>
                 <Typography variant="h6">{product.name}</Typography>
                 <Typography>${product.price}</Typography>
-                <Button onClick={onAddToCart} variant="contained" color="primary" className="mt-2">
+                
+                <Button  onClick={onAddToCart} variant="contained" color="primary" className="mt-2  bg-slate-300">
                     Add to Cart
                 </Button>
-                <Button onClick={onAddToWishlist} variant="outlined" color="secondary" className="mt-2 ml-2">
+                <Button  onClick={onAddToWishlist} variant="contained" color="secondary" className="mt-2 ml-2 bg-purple-100">
                     Add to Wishlist
                 </Button>
+
             </CardContent>
         </Card>
+      
     );
 };
 
